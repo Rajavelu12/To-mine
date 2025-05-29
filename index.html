@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>💖 A Cute Message 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- 🌸 Lots of Cute Flowers and Hearts -->
+<script>
+  const symbols = ["🌸", "🌼", "💖", "💗", "💐", "🌷", "❤️","🐼"];
+  for (let i = 0; i < 30; i++) {
+    let span = document.createElement("span");
+    span.className = "flower-heart";
+    span.innerText = symbols[Math.floor(Math.random() * symbols.length)];
+    span.style.left = Math.random() * 100 + "vw";
+    span.style.animationDelay = Math.random() * 10 + "s";
+    document.body.appendChild(span);
+  }
+</script>
+
+  <div class="cute-box">
+    <h1>🌸 Hey You Queen! 🌸</h1>
+    <p> i hate all languages you know why, because none of them can actually explain how beautiful you are. and none of them actully have a words to describe how sorry i am for hurting my azhagi 💕</p>
+    <button onclick="showLove()">Click Me! 💌</button>
+    <p id="response"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

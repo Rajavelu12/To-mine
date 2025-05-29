@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(135deg, #ffe6f0, #fddde6, #ffe0ec, #f9dfe9);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cute-box {
+  background-color: #ffe4e1;
+  border: 5px dotted #ff69b4;
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.3);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff1493;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #c71585;
+}
+
+button {
+  background-color: #ffb6c1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #ff69b4;
+}
+/* 🌸 Floating Flowers and Hearts */
+.flower-heart {
+  position: fixed;
+  top: -50px;
+  animation: float 10s linear infinite;
+  font-size: 1.5rem;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
